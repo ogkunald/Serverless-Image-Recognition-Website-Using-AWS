@@ -2,7 +2,7 @@
 
 ## Description
 
-Serverless image recognition website which gives detailed information about image without spining any server.
+Serverless image recognition website which gives detailed information about image without spinning any server.
 Image recognition is done using AWS Rekognition service.
 
 https://www.kunalrecognition.live/
