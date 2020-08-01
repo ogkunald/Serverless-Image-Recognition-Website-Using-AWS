@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nasty Recogniton</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.725.0.min.js"></script>
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+  <p><img src="assets/img/nastyblue.png" alt="" class="logo"></p>
+</div>
+  <div id="app">
+    <h1>Serverless Image Recognition</h1>
+    <img id="output_image" class="imgs"/>
+
+    <label class="button">Choose File
+      <input type="file" id="fileToUpload" @change="onFileChange">
+      <label>
+    <div v-if="!image"></div>
+      
+    </div>
+
+
+
+<div class="row container">
+  <div class="column">
+    <h2 class="titlec">Detected Items</h2>
+    <p   id="detectedl" style="font-size: large;">Upload the image to detect items</p>
+  </div>
+  
+  <div class="column">
+    <h2 class="titlec">Detected Text</h2>
+    <p  id="detectedt" style="font-size: large;">Upload the image to detect text</p>
+  </div>
+  
+  <div class="column">
+    <h2 class="titlec">Detected Faces</h2>
+    <p  id="detectedf" style="font-size: large;">Upload the image to detect face data</p>
+  </div>
+</div>
+</div>
+<div class="fixedfooter">
+  <div class="container">
+    <p class="copyright">Copyright &copy; All Rights Reserved</p>
+    <div class="social">                  
+      <a href="https://www.facebook.com/profile.php?id=100003124707339" class="social socialicon"><i class='bx bxl-facebook-circle'></i></a>
+      <a href="https://github.com/nastyzera" class="social socialicon"><i class='bx bxl-github' ></i></a>
+      <a href="https://www.reddit.com/user/nzera1337" class="social socialicon"><i class='bx bxl-reddit' ></i></a>
+    </div>
+</div> 
+</div>
+<script src="assets/main.js"></script>
+</body>
+
+       
+</div>
+</html>
