@@ -1,0 +1,169 @@
+
+* {
+  box-sizing: border-box;
+}
+:root{
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+  
+}
+:root{
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size:2rem;
+  --h2-font-size:1.25rem;
+  --normal-fonst-size: 0.938rem;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+.logo {
+  position: relative;
+  width: 120px;
+  margin-top: 0rem;
+}
+.imgs {
+  width: 30%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+ 
+  
+  .imgs {
+    width: 10%;
+    margin: auto;
+
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  text-align: center;
+  padding: .75rem 2.5rem;
+  font-size: 20px;
+  border-radius: .5rem;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0, 0, 0,.15);
+}
+input[type="file"] {
+  display: none;
+}
+
+.titlec{
+  color: var(--first-color);
+}
+#app {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#logo {
+  width: 100px;
+}
+
+
+.header {
+  background-color: #fff;
+  position: fixed;  
+  width: 100%;
+  padding: 1px;
+  font-size: medium;
+  text-align: center;
+  top: 0;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.container{
+  width: 80%;
+  
+  margin: 0 auto; 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.copyright{
+  float: left;
+}
+.social{
+  float: right;
+}
+.socialicon{
+  width: min-content;
+  padding: 0.1rem 0;
+  margin-bottom: var(--mb-2);
+  font-size: 2rem;
+  margin-top: 0.45rem;
+  float: left;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  overflow: auto;
+}
+.row{
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.row:after {
+  
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
