@@ -16,7 +16,7 @@ function DetectLabels(imageData) {
   };
   rekognition.detectLabels(params, function (err, data) {
     document.getElementById("detectedl").style = "overflow: auto;  width: 100%; height: auto; align-self: center;";
-    if (err) console.log(err, err.stack); // an error occurred
+    if (err) console.log(err, err.stack); 
     else {
       var str = ''
 
@@ -42,7 +42,7 @@ function DetectTexts(imageData) {
   }
 
   rekognition.detectText(params, function (err, data) {
-    if (err) console.log(err, err.stack); // an error occurred
+    if (err) console.log(err, err.stack); 
     else {
       txt = ''
 
@@ -67,7 +67,7 @@ function DetectFaces(imageData) {
   }
 
   rekognition.detectFaces(params, function (err, data) {
-    if (err) console.log(err, err.stack); // an error occurred
+    if (err) console.log(err, err.stack); 
     else {
       str = ''
       str += 'Faces detected:' + data.FaceDetails.length + '<br> <br>'
@@ -145,7 +145,7 @@ function ProcessImage() {
 
 function AnonLog() {
 ////////////////////////////////////ADD YOUR COGNITO IDENTITY POOL HERE////////////////////////////////////////////////
-  AWS.config.region = 'YOUR REGION'; // Region
+  AWS.config.region = 'YOUR REGION'; 
   AWS.config.credentials = new AWS.CognitoIdentityCredentials({
       IdentityPoolId: 'YOUR_COGNITO_IDENTITY_POOL_ID',
   });
