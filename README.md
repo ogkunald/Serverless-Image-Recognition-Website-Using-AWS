@@ -29,5 +29,6 @@ Generate your Cognito Identity Pool Identifier-
 ### TODO
 1. Add user authentication
 2. Personal gallery for authenticated users.
+3. Recognise details from custom URL.
 
 ### Maintained By : [Kunal Dongare](https://github.com/nastyzera)
