@@ -1,5 +1,7 @@
 # Serverless-Image-Recognition-Using-AWS
 
+### Note- This project can be made using AWS free tier
+
 ## Description
 
 Serverless image recognition website which gives detailed information about image without spinning any server.
