@@ -48,7 +48,7 @@ function DetectTexts(imageData) {
 
       for (i = 0; i < data.TextDetections.length; i++) {
         if ((data.TextDetections[i].Type == 'LINE'))
-        txt +=  data.TextDetections[i].DetectedText  + '<br>'
+        txt +=  data.TextDetections[i].DetectedText  + '<br> '
       }
       if(txt=='') txt='No Text Detected'
       document.getElementById("detectedt").innerHTML = txt;
